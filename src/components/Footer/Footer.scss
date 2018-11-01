@@ -1,0 +1,44 @@
+@import "../../layout/theme.scss";
+
+.footer {
+  justify-content: center;
+  align-content: center;
+  background-color: #0e0e0e;
+  padding: 10px 5px 5px;
+
+  .notice-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+    .copyright {
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+
+      @media (max-width: 640px - 1px) {
+        justify-content: center;
+      }
+    }
+
+    .rss {
+      display: flex;
+
+      @media (max-width: 640px - 1px) {
+        display: none;
+      }
+
+      flex: 1;
+      justify-content: center;
+    }
+  }
+}
+
+.footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 15;
+}
